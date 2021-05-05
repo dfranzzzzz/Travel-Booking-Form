@@ -1,0 +1,164 @@
+body {
+  font-family: sans-serif;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  background-position: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url(./images/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+}
+
+.column65 {
+  height: fit-content;
+  flex: 65%;
+  margin: 0 50px;
+  padding: 20px;
+  text-align: end;
+}
+.column35 {
+  height: fit-content;
+  flex: 35%;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  margin: 20px;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+button {
+  height: 40px;
+  width: 100px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 7px;
+  border: none;
+  background: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+#learn {
+  background: rgba(80, 135, 255, 0.719);
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+h1 {
+  font-size: 50px;
+  letter-spacing: 2px;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 0;
+}
+
+p {
+  font-size: large;
+  color: rgba(255, 255, 255, 0.9);
+  letter-spacing: 1px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+legend {
+  text-align: center;
+  color: #fff;
+  font-size: larger;
+  letter-spacing: 2px;
+  margin: 10px;
+}
+
+fieldset input {
+  line-height: 20px;
+  padding: 10px;
+  display: block;
+  width: 95%;
+  border: none;
+  border-bottom: 1.5px solid black;
+  background: none;
+  outline: none;
+  transition: 0.2s;
+  color: #fff;
+}
+
+::placeholder {
+  color: #fff;
+}
+
+:focus {
+  border-bottom: 1px burlywood solid;
+}
+
+fieldset {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 20px 0;
+  padding: 10px 0;
+  border-style: none;
+}
+
+fieldset > * {
+  margin: 10px 0;
+}
+
+fieldset:last-child {
+  display: in;
+}
+
+#submit {
+  background: rgba(80, 135, 255, 0.719);
+  padding: 10px;
+  outline: none;
+  border: none;
+  border-radius: 7px;
+  color: #fff;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    background-size: cover;
+    flex-direction: column;
+  }
+
+  h1 {
+    font-size: x-large;
+    margin-top: 0;
+  }
+
+  p {
+    font-size: small;
+  }
+
+  section {
+    margin: 0;
+    padding: 0;
+  }
+
+  .column65 {
+    width: 90%; 
+    text-align: center;
+  }
+  .column35 {
+    width: 80%; 
+  }
+
+  fieldset  input{
+    line-height: 15px;
+    padding: none;
+  }
+
+  fieldset > * {
+    margin: 5px;
+  }
+
+}
